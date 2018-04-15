@@ -1,1 +1,15 @@
 C:\Users\Эльдорадо\Documents\git\TOMOGRAMA\Tomograma\bin\Debug\Tomograma.exe.config
+D:\Vstudio\Git\TOMOGRAMA\Tomograma\bin\Debug\Tomograma.exe.config
+D:\Vstudio\Git\TOMOGRAMA\Tomograma\bin\Debug\Tomograma.exe
+D:\Vstudio\Git\TOMOGRAMA\Tomograma\bin\Debug\Tomograma.pdb
+D:\Vstudio\Git\TOMOGRAMA\Tomograma\bin\Debug\OpenTK.dll
+D:\Vstudio\Git\TOMOGRAMA\Tomograma\bin\Debug\OpenTK.GLControl.dll
+D:\Vstudio\Git\TOMOGRAMA\Tomograma\bin\Debug\OpenTK.pdb
+D:\Vstudio\Git\TOMOGRAMA\Tomograma\bin\Debug\OpenTK.xml
+D:\Vstudio\Git\TOMOGRAMA\Tomograma\bin\Debug\OpenTK.GLControl.xml
+D:\Vstudio\Git\TOMOGRAMA\Tomograma\obj\Debug\Tomograma.csprojResolveAssemblyReference.cache
+D:\Vstudio\Git\TOMOGRAMA\Tomograma\obj\Debug\Tomograma.Form1.resources
+D:\Vstudio\Git\TOMOGRAMA\Tomograma\obj\Debug\Tomograma.Properties.Resources.resources
+D:\Vstudio\Git\TOMOGRAMA\Tomograma\obj\Debug\Tomograma.csproj.GenerateResource.Cache
+D:\Vstudio\Git\TOMOGRAMA\Tomograma\obj\Debug\Tomograma.exe
+D:\Vstudio\Git\TOMOGRAMA\Tomograma\obj\Debug\Tomograma.pdb
