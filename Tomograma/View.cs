@@ -11,6 +11,9 @@ namespace Tomograma
 {
     class View
     {
+        Bitmap textureImage;
+        int VBOtexture;
+
         public void SetupView(int width, int height)
         {
             GL.ShadeModel(ShadingModel.Smooth);
@@ -66,6 +69,45 @@ namespace Tomograma
                     GL.Vertex2(x_coord + 1, y_coord);
                 }
             GL.End();
+        }
+
+        public void Load2DTexture()
+        {
+            GL.BindTexture(TextureTarget.Texture2D, VBOtexture);
+
+
+            BitmapData data = textureImage.LockBits(
+                new System.Drawing.Rectangle(0, 0, textureImage.Width, textureImage.Height),
+                ImageLockMode.ReadOnly,
+                System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+
+
+            GL.TexImage2D(TextureTarget.Texture2D, 0, PixelInternalFormat.Rgba,
+                data.Width, data.Height, 0, OpenTK.Graphics.OpenGL.PixelFormat.Bgra,
+                PixelType.UnsignedByte, data.Scan0);
+
+            textureImage.UnlockBits(data);
+
+            GL.TexParameter(TextureTarget.Texture2D, TextureParameterName.TextureMinFilter,
+                (int)TextureMinFilter.Linear);
+
+            GL.TexParameter(TextureTarget.Texture2D, TextureParameterName.TextureMagFilter,
+                (int)TextureMagFilter.Linear);
+
+            ErrorCode Er = GL.GetError();
+            string str = Er.ToString();
+        }
+
+
+        public void generateTextureImage(int layerNumber)
+        {
+            textureImage = new Bitmap(Bin.X, Bin.Y);
+            for(int i=0; i< Bin.X; i++)
+                for(int j=0; j<Bin.Y; j++)
+                {
+                    int PixelNumber = i + j * Bin.X + layerNumber * Bin.X * Bin.Y;
+                    textureImage.SetPixel(i, j, TransferFunction(Bin.array[PixelNumber]));
+                }
         }
 
 

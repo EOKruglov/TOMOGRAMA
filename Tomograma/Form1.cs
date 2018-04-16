@@ -17,14 +17,41 @@ namespace Tomograma
         View view = new View();
         bool loaded = false;
         int currentLayer = 0;
+        int FrameCount;
+        DateTime NextFPSUpdate = DateTime.Now.AddSeconds(1);
+        //Bitmap textureImage;
+        //int VBOtexture;
+
+
         public Form1()
         {
             InitializeComponent();
         }
 
+
+        void displayFPS()
+        {
+            if(DateTime.Now >= NextFPSUpdate)
+            {
+                this.Text = String.Format("CT Visualizer (fps={0})", FrameCount);
+                NextFPSUpdate = DateTime.Now.AddSeconds(1);
+                FrameCount = 0;
+            }
+            FrameCount++;
+        }
+
+        private void Application_Idle(object sender, EventArgs e)
+        {
+            while (glControl1.IsIdle)
+            {
+                displayFPS();
+                glControl1.Invalidate();
+            }
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            Application.Idle += Application_Idle;
         }
 
         private void открытьToolStripMenuItem_Click(object sender, EventArgs e)
@@ -47,6 +74,11 @@ namespace Tomograma
                 view.DrawQuads(currentLayer);
                 glControl1.SwapBuffers();
             }
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            currentLayer = trackBar1.Value;
         }
     }
 }

@@ -13,3 +13,16 @@ D:\Vstudio\Git\TOMOGRAMA\Tomograma\obj\Debug\Tomograma.Properties.Resources.reso
 D:\Vstudio\Git\TOMOGRAMA\Tomograma\obj\Debug\Tomograma.csproj.GenerateResource.Cache
 D:\Vstudio\Git\TOMOGRAMA\Tomograma\obj\Debug\Tomograma.exe
 D:\Vstudio\Git\TOMOGRAMA\Tomograma\obj\Debug\Tomograma.pdb
+C:\Users\Эльдорадо\Documents\git\TOMOGRAMA\Tomograma\obj\Debug\Tomograma.exe
+C:\Users\Эльдорадо\Documents\git\TOMOGRAMA\Tomograma\obj\Debug\Tomograma.pdb
+C:\Users\Эльдорадо\Documents\git\TOMOGRAMA\Tomograma\bin\Debug\Tomograma.exe
+C:\Users\Эльдорадо\Documents\git\TOMOGRAMA\Tomograma\bin\Debug\Tomograma.pdb
+C:\Users\Эльдорадо\Documents\git\TOMOGRAMA\Tomograma\bin\Debug\OpenTK.dll
+C:\Users\Эльдорадо\Documents\git\TOMOGRAMA\Tomograma\bin\Debug\OpenTK.GLControl.dll
+C:\Users\Эльдорадо\Documents\git\TOMOGRAMA\Tomograma\bin\Debug\OpenTK.pdb
+C:\Users\Эльдорадо\Documents\git\TOMOGRAMA\Tomograma\bin\Debug\OpenTK.xml
+C:\Users\Эльдорадо\Documents\git\TOMOGRAMA\Tomograma\bin\Debug\OpenTK.GLControl.xml
+C:\Users\Эльдорадо\Documents\git\TOMOGRAMA\Tomograma\obj\Debug\Tomograma.csprojResolveAssemblyReference.cache
+C:\Users\Эльдорадо\Documents\git\TOMOGRAMA\Tomograma\obj\Debug\Tomograma.Form1.resources
+C:\Users\Эльдорадо\Documents\git\TOMOGRAMA\Tomograma\obj\Debug\Tomograma.Properties.Resources.resources
+C:\Users\Эльдорадо\Documents\git\TOMOGRAMA\Tomograma\obj\Debug\Tomograma.csproj.GenerateResource.Cache
