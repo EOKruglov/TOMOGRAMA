@@ -16,6 +16,7 @@ namespace Tomograma
         Bin bin = new Bin();
         View view = new View();
         bool loaded = false;
+        bool needReload = false;
         int currentLayer = 0;
         int FrameCount;
         DateTime NextFPSUpdate = DateTime.Now.AddSeconds(1);
@@ -71,7 +72,14 @@ namespace Tomograma
         {
             if(loaded)
             {
-                view.DrawQuads(currentLayer);
+                if(needReload)
+                {
+                    view.generateTextureImage(currentLayer);
+                    view.Load2DTexture();
+                    needReload = false; 
+                }
+                //view.DrawQuads(currentLayer);
+                view.DrawTexture();
                 glControl1.SwapBuffers();
             }
         }
@@ -79,6 +87,7 @@ namespace Tomograma
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
             currentLayer = trackBar1.Value;
+            needReload = true;
         }
     }
 }

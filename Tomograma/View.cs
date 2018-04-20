@@ -111,5 +111,27 @@ namespace Tomograma
         }
 
 
+        public void DrawTexture()
+        {
+            GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
+            GL.Enable(EnableCap.Texture2D);
+            GL.BindTexture(TextureTarget.Texture2D, VBOtexture);
+
+
+            GL.Begin(BeginMode.Quads);
+            GL.Color3(Color.White);
+            GL.TexCoord2(0f, 0f);
+            GL.Vertex2(0, 0);
+            GL.TexCoord2(0f, 1f);
+            GL.Vertex2(0, Bin.Y);
+            GL.TexCoord2(1f, 1f);
+            GL.Vertex2(Bin.X, Bin.Y);
+            GL.TexCoord2(1f, 0f);
+            GL.Vertex2(Bin.X, 0);
+            GL.End();
+
+            GL.Disable(EnableCap.Texture2D);
+        }
+
     }
 }
