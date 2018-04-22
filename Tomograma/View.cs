@@ -13,7 +13,7 @@ namespace Tomograma
     {
         Bitmap textureImage;
         int VBOtexture;
-
+        public int min = 0, width = 1000;
         public void SetupView(int width, int height)
         {
             GL.ShadeModel(ShadingModel.Smooth);
@@ -34,8 +34,7 @@ namespace Tomograma
 
         public Color TransferFunction(short value)
         {
-            int min = 0;
-            int max = 2000;
+            int max = min + width;
             int newVal = clamp((value - min) * 255 / (max - min), 0, 255);
             return Color.FromArgb(255, newVal, newVal, newVal);
         }
@@ -44,6 +43,8 @@ namespace Tomograma
         {
             GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
             GL.Begin(BeginMode.Quads);
+
+
             for(int x_coord = 0; x_coord < Bin.X - 1; x_coord++)
                 for(int y_coord = 0; y_coord < Bin.Y - 1; y_coord++)
                 {
