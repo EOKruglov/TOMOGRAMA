@@ -65,7 +65,7 @@ namespace Tomograma
                 view.SetupView(glControl1.Width, glControl1.Height);
                 loaded = true;
                 glControl1.Invalidate();
-                trackBar1.Maximum = Bin.Y - 1;
+                trackBar1.Maximum = Bin.Z - 1;
             }
         }
 
@@ -101,11 +101,16 @@ namespace Tomograma
         private void trackBar2_Scroll(object sender, EventArgs e)
         {
             view.min = trackBar2.Value;
+            glControl1_Paint(sender, e);
+            needReload = true;
+
         }
 
         private void trackBar3_Scroll(object sender, EventArgs e)
         {
             view.width = trackBar3.Value;
+            glControl1_Paint(sender, e);
+            needReload = true;
         }
     }
 }

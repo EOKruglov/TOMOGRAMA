@@ -14,13 +14,18 @@ namespace Tomograma
         Bitmap textureImage;
         int VBOtexture;
         public int min = 0, width = 1000;
+        int line;
         public void SetupView(int width, int height)
         {
             GL.ShadeModel(ShadingModel.Smooth);
             GL.MatrixMode(MatrixMode.Projection);
             GL.LoadIdentity();
             GL.Ortho(0, Bin.X, 0, Bin.Y, -1, 1);
-            GL.Viewport(0, 0, width, height);
+            if (width > height)
+                line = height;
+            else
+                line = width;
+            GL.Viewport(0, 0, line, line);
         }
 
         public int clamp(int value, int min, int max)
