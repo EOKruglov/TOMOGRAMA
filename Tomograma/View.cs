@@ -26,6 +26,7 @@ namespace Tomograma
             else
                 line = width;
             GL.Viewport(0, 0, line, line);
+            SetupLightning();
         }
 
         public int clamp(int value, int min, int max)
@@ -137,6 +138,28 @@ namespace Tomograma
             GL.End();
 
             GL.Disable(EnableCap.Texture2D);
+        }
+
+        public void SetupLightning()
+        {
+            GL.Enable(EnableCap.Lighting);
+            GL.Enable(EnableCap.Light1);
+            GL.Enable(EnableCap.Light2);
+
+            Vector4 lightPosition1 = new Vector4(1.5f, -1.5f, 10.0f, 1.0f);
+            Vector4 lightPosition2 = new Vector4(0.75f, -0.75f, 10.0f, 1.0f);
+
+            GL.Light(LightName.Light1, LightParameter.Position, lightPosition1);
+            GL.Light(LightName.Light2, LightParameter.Position, lightPosition2);
+
+            Vector4 lightDirection1 = new Vector4(0.75f, -0.75f, 0.8f, 1.0f);
+            GL.Light(LightName.Light1, LightParameter.SpotDirection, lightDirection1);
+
+            Vector4 lightDirection2 = new Vector4(0.75f, -0.75f, 0.8f, 1.0f);
+            GL.Light(LightName.Light2, LightParameter.SpotDirection, lightDirection2);
+
+            GL.Light(LightName.Light1, LightParameter.Diffuse, OpenTK.Graphics.Color4.Yellow);
+            GL.Light(LightName.Light2, LightParameter.Diffuse, OpenTK.Graphics.Color4.Red);
         }
 
     }

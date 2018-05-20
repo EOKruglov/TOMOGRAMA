@@ -2,8 +2,6 @@ C:\Users\Эльдорадо\Documents\git\TOMOGRAMA\Tomograma\bin\Debug\Tomogram
 D:\Vstudio\Git\TOMOGRAMA\Tomograma\bin\Debug\Tomograma.exe.config
 D:\Vstudio\Git\TOMOGRAMA\Tomograma\bin\Debug\Tomograma.exe
 D:\Vstudio\Git\TOMOGRAMA\Tomograma\bin\Debug\Tomograma.pdb
-D:\Vstudio\Git\TOMOGRAMA\Tomograma\bin\Debug\OpenTK.dll
-D:\Vstudio\Git\TOMOGRAMA\Tomograma\bin\Debug\OpenTK.GLControl.dll
 D:\Vstudio\Git\TOMOGRAMA\Tomograma\bin\Debug\OpenTK.pdb
 D:\Vstudio\Git\TOMOGRAMA\Tomograma\bin\Debug\OpenTK.xml
 D:\Vstudio\Git\TOMOGRAMA\Tomograma\bin\Debug\OpenTK.GLControl.xml
