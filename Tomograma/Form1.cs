@@ -10,19 +10,20 @@ using System.Windows.Forms;
 
 namespace Tomograma
 {
+    
     public partial class Form1 : Form
     {
-
+        bool needReload = false;
         Bin bin = new Bin();
         View view = new View();
         bool loaded = false;
-        bool needReload = false;
+        
         int currentLayer = 0;
         int FrameCount;
         DateTime NextFPSUpdate = DateTime.Now.AddSeconds(1);
         //Bitmap textureImage;
         //int VBOtexture;
-
+        public int WIDTH, HEIGHT;
 
         public Form1()
         {
@@ -63,6 +64,8 @@ namespace Tomograma
                 string str = dialog.FileName;
                 bin.readBin(str);
                 view.SetupView(glControl1.Width, glControl1.Height);
+                WIDTH = glControl1.Width;
+                HEIGHT = glControl1.Height;
                 loaded = true;
                 glControl1.Invalidate();
                 trackBar1.Maximum = Bin.Z - 1;

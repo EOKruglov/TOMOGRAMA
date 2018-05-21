@@ -24,3 +24,15 @@ C:\Users\Эльдорадо\Documents\git\TOMOGRAMA\Tomograma\obj\Debug\Tomogram
 C:\Users\Эльдорадо\Documents\git\TOMOGRAMA\Tomograma\obj\Debug\Tomograma.Form1.resources
 C:\Users\Эльдорадо\Documents\git\TOMOGRAMA\Tomograma\obj\Debug\Tomograma.Properties.Resources.resources
 C:\Users\Эльдорадо\Documents\git\TOMOGRAMA\Tomograma\obj\Debug\Tomograma.csproj.GenerateResource.Cache
+C:\Users\Kruglov.E\Desktop\TOMOGRAMA\Tomograma\bin\Debug\Tomograma.exe.config
+C:\Users\Kruglov.E\Desktop\TOMOGRAMA\Tomograma\bin\Debug\Tomograma.exe
+C:\Users\Kruglov.E\Desktop\TOMOGRAMA\Tomograma\bin\Debug\Tomograma.pdb
+C:\Users\Kruglov.E\Desktop\TOMOGRAMA\Tomograma\bin\Debug\OpenTK.pdb
+C:\Users\Kruglov.E\Desktop\TOMOGRAMA\Tomograma\bin\Debug\OpenTK.xml
+C:\Users\Kruglov.E\Desktop\TOMOGRAMA\Tomograma\bin\Debug\OpenTK.GLControl.xml
+C:\Users\Kruglov.E\Desktop\TOMOGRAMA\Tomograma\obj\Debug\Tomograma.csprojResolveAssemblyReference.cache
+C:\Users\Kruglov.E\Desktop\TOMOGRAMA\Tomograma\obj\Debug\Tomograma.Form1.resources
+C:\Users\Kruglov.E\Desktop\TOMOGRAMA\Tomograma\obj\Debug\Tomograma.Properties.Resources.resources
+C:\Users\Kruglov.E\Desktop\TOMOGRAMA\Tomograma\obj\Debug\Tomograma.csproj.GenerateResource.Cache
+C:\Users\Kruglov.E\Desktop\TOMOGRAMA\Tomograma\obj\Debug\Tomograma.exe
+C:\Users\Kruglov.E\Desktop\TOMOGRAMA\Tomograma\obj\Debug\Tomograma.pdb
