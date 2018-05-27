@@ -13,7 +13,7 @@ namespace Tomograma
     {
         Bitmap textureImage;
         int VBOtexture;
-        public int min = 0, width = 1000;
+        public int min = 0, width = 2000;
         int line;
          
         public void SetupView(int width, int height)
@@ -28,7 +28,7 @@ namespace Tomograma
             else
                 line = width;
             GL.Viewport(0, 0, line, line);
-            //SetupLightning();
+            SetupLightning();
         }
 
         public int clamp(int value, int min, int max)

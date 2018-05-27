@@ -99,9 +99,12 @@
             // trackBar3
             // 
             this.trackBar3.Location = new System.Drawing.Point(506, 571);
+            this.trackBar3.Maximum = 1000;
+            this.trackBar3.Minimum = 1;
             this.trackBar3.Name = "trackBar3";
             this.trackBar3.Size = new System.Drawing.Size(195, 45);
             this.trackBar3.TabIndex = 5;
+            this.trackBar3.Value = 1;
             this.trackBar3.Scroll += new System.EventHandler(this.trackBar3_Scroll);
             // 
             // label1
